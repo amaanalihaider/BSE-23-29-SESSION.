@@ -1,0 +1,116 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int x = 20;
+	do {
+		cout << x << endl;;
+		x--;
+
+	} while (x >= 1);
+
+
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+int main() {
+
+	int x;
+	long long int	f = 1;
+	cout << "Enter a number: ";
+	cin >> x;
+
+	int i = 1;
+
+	do {
+		f *= i;
+
+		i++;
+	} while (i <= x);
+	cout << "Factorial of " << x << " is " << f << endl;
+	return 0;
+
+}
+
+#include<iostream>
+using namespace std;
+int main() {
+	int d;
+	cout << "Enter a decimal number to be converted into octal number: ";
+	cin >> d;
+	int OctalNumber = 0;
+	int PlaceValue = 1;
+	do {
+		OctalNumber += (d % 8) * PlaceValue;
+		d /= 8;
+		PlaceValue *= 10;
+
+	} while (d != 0);
+
+	cout << "The octal number is: " << OctalNumber << endl;
+	return 0;
+
+}
+
+#include<iostream>
+using namespace std;
+int main() {
+	float Numba1, Numba2, Answer;
+	char opertr, choice;
+	do {
+		cout << "Enter First number, Operator and Second number: ";
+		cin >> Numba1 >> opertr >> Numba2;
+		switch (opertr)
+		{
+		case '+':
+			Answer = Numba1 + Numba2;
+			break;
+
+		case '-':
+			Answer = Numba1 - Numba2;
+			break;
+
+		case '*':
+			Answer = Numba1 * Numba2;
+			break;
+		case'/':
+			Answer = Numba1 / Numba2;
+			break;
+		default:
+			break;
+		}
+		cout << "Answer = " << Answer << endl;
+		cout << "Do Another?(y/n): ";
+		cin >> choice;
+	} while (choice == 'Y' || choice == 'y');
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main() {
+	int numba = 7;
+	do {
+		cout << numba << " ";
+
+		numba += 7;
+
+	} while (numba <= 98);
+
+	return 0;
+}
+#include<iostream>
+using namespace std;
+int main() {
+	int numba = 1;
+	do {
+		cout << numba << " ";
+		numba *= 2;
+	} while (numba <= 512);
+	return 0;
+
+}
+
